@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bienvenido a Borreguito</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Logo Borreguito" class="logo" />
+    <h1>¡Bienvenidos a Borreguito!</h1>
+    <p>Gracias por elegirnos</p>
+    <div class="button-group">
+      <button id="subscribeBtn">Aceptar notificaciones</button>
+      <button id="denyBtn">Denegar notificaciones</button>
+    </div>
+    <div id="notiStatus" class="estado"></div>
+    <div id="oferta" class="oferta"></div>
+  </div>
+  <script type="module" src="app.js"></script>
+  <script>
+    document.getElementById('denyBtn').addEventListener('click', () => {
+      document.getElementById('notiStatus').textContent = "❌ Permiso de notificación denegado";
+    });
+  </script>
+</body>
+</html>
