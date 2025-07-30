@@ -17,10 +17,20 @@
     <div id="notiStatus" class="estado"></div>
     <div id="oferta" class="oferta"></div>
   </div>
+
   <script type="module" src="app.js"></script>
   <script>
     document.getElementById('denyBtn').addEventListener('click', () => {
       document.getElementById('notiStatus').textContent = "❌ Permiso de notificación denegado";
+    });
+
+    document.getElementById('subscribeBtn').addEventListener('click', () => {
+      const status = document.getElementById('notiStatus');
+      status.textContent = "✅ Registración exitosa. Serás redirigido en 6 segundos...";
+      
+      setTimeout(() => {
+        window.location.href = "https://borreguito.com.ar/";
+      }, 6000);
     });
   </script>
 </body>
