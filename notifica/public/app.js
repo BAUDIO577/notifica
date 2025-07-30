@@ -46,5 +46,5 @@ document.getElementById('subscribeBtn').addEventListener('click', async () => {
 const ofertaDiv = document.getElementById("oferta");
 onValue(ref(db, 'oferta/actual'), (snapshot) => {
   const texto = snapshot.val();
-  ofertaDiv.textContent = texto ? `🛍️ Borreguito te ofrece: ${texto}` : '';
+  ofertaDiv.textContent = texto ? `🛍🐑 Borreguito te ofrece: ${texto}` : '';
 });
