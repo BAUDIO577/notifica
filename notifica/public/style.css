@@ -1,21 +1,54 @@
-.container {
+/* Fondo general verde Borreguito */
+body {
+  background-color: #00A651;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/* Contenedor blanco centrado */
+.container { 
   max-width: 400px;
   margin: 40px auto;
   padding: 20px;
   text-align: center;
-  background: white;
+  background-color: white;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
+
+/* Logo Borreguito */
 .logo {
   max-width: 150px;
   margin: 10px auto;
 }
-.button-group button {
-  margin: 10px;
-  padding: 10px 20px;
+
+/* Agrupación de botones en línea */
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
 }
+
+/* Botones */
+.button-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+  background-color: #dcdcdc;
+}
+
+/* Estado de notificación */
 .estado {
   margin-top: 15px;
   font-weight: bold;
   color: green;
 }
+
